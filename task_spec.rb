@@ -27,6 +27,11 @@ describe Task do
     expect(laundry.task_done?).to be true
   end
 
+  it 'can have a title' do
+    laundry = Task.new
+    laundry.set_title "Laundry Day"
+    expect(laundry.get_title).to eq 'Laundry Day'
+  end
 
 
 end #end task do
